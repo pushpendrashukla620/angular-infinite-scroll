@@ -1,0 +1,67 @@
+###############################
+# OS / Editor / IDE Files
+###############################
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.vscode/
+.idea/
+*.iml
+
+###############################
+# Java / Spring Boot (backend)
+###############################
+/backend/target/
+/backend/.mvn/wrapper/maven-wrapper.jar
+/backend/.mvn/wrapper/maven-wrapper.properties
+/backend/.gradle/
+/backend/build/
+/backend/out/
+/backend/logs/
+/backend/*.log
+
+# Ignore compiled class/jar/war/ear files
+*.class
+*.jar
+*.war
+*.ear
+
+###############################
+# Angular / Frontend (ui)
+###############################
+# Node dependencies
+**/node_modules/
+
+# Angular build outputs
+/ui/dist/
+/ui/out-tsc/
+/ui/infinite-scroll-demo/dist/
+/ui/infinite-scroll-demo/.angular/cache/
+/ui/infinite-scroll-demo/.angular/
+.ui/.angular/
+
+# Angular cache and lock files (if auto-generated)
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+###############################
+# Environment / Config Files
+###############################
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+###############################
+# Misc
+###############################
+/tmp/
+/coverage/
+/reports/
+/bin/
+/build/
+/uploads/

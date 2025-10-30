@@ -1,0 +1,33 @@
+.scroll-container {
+  height: 100vh; /* Fixed height for scrolling */
+  overflow-y: auto;
+  padding: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 16px;
+}
+
+.item-card {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #3f51b5;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}

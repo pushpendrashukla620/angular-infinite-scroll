@@ -1,0 +1,20 @@
+<div
+ class="scroll-container"
+  infiniteScroll
+  [infiniteScrollDistance]="1"
+  [infiniteScrollThrottle]="150"
+  [alwaysCallback]="true"
+  [scrollWindow]="false"
+  [infiniteScrollDisabled]="loading || page >= totalPages"
+  (scrolled)="onScroll()"
+>
+  <div class="grid-container">
+    <mat-card *ngFor="let item of numbers" class="item-card">
+      <mat-card-content>{{ item }}</mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="loading" *ngIf="loading">
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </div>
+</div>
